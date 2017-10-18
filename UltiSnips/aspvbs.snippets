@@ -1,0 +1,162 @@
+priority -50
+
+snippet prop "property escape"
+(#;${1:${VISUAL:Prop}}#)
+endsnippet
+
+snippet propn "property non-escape"
+(#:${1:${VISUAL:Prop}}#)
+endsnippet
+
+snippet view "view escape"
+(#*${1:${VISUAL:View}}#)
+endsnippet
+
+snippet viewn "view non-escape"
+(#/${1:${VISUAL:View}}#)
+endsnippet
+
+snippet bag "bag escape"
+(#&${1:${VISUAL:Bag}}#)
+endsnippet
+
+snippet bag "bag non-escape"
+(#|${1:${VISUAL:Bag}}#)
+endsnippet
+
+snippet app "application escape"
+(#+${1:${VISUAL:App}}#)
+endsnippet
+
+snippet app "application non-escape"
+(#-${1:${VISUAL:App}}#)
+endsnippet
+
+snippet session "session escape"
+(#=${1:${VISUAL:Session}}#)
+endsnippet
+
+snippet sessionn "session non-escape"
+(#~${1:${VISUAL:Session}}#)
+endsnippet
+
+snippet req "request escape"
+(#$${1:${VISUAL:Request}}#)
+endsnippet
+
+snippet reqn "request non-escape"
+(#\${1:${VISUAL:Request}}#)
+endsnippet
+
+snippet template "template"
+(#\`${1:${VISUAL:Templete}}#)
+endsnippet
+
+snippet templatei "template output include"
+(#@${1:${VISUAL:Templete}}#)
+endsnippet
+
+snippet command "command escape"
+(#!${1:${VISUAL:Command}}#)
+endsnippet
+
+snippet commandn "command non-escape"
+(#?${1:${VISUAL:Command}}#)
+endsnippet
+
+snippet ondraw "OnDraw template"
+(#%${1:${VISUAL:FuncName}}|${2:${VISUAL:Param1}}#|#
+	${3:${VISUAL:Param2}}
+#)
+endsnippet
+
+snippet sw "switch (OnDraw template)"
+#|#
+	${1:${VISUAL:Param}}
+endsnippet
+
+snippet msg "message template"
+(#%_Message|
+	${2:${VISUAL:Param1}}
+#|#
+	${3:${VISUAL:Param2}}
+#)
+endsnippet
+
+snippet msgt "message text template"
+(#%_Message_Text|
+	${1:${VISUAL:Param1}}
+#|#
+	${2:${VISUAL:Param2}}
+#)
+endsnippet
+
+snippet func "function"
+Function ${1:${VISUAL:FunctionName}}(${2:${VISUAL:Param1}})
+	${3}
+End Function
+endsnippet
+
+snippet sub "sub"
+Sub ${1:${VISUAL:SubName}}(${2:${VISUAL:Param1}})
+	${3}
+End Sub
+endsnippet
+
+snippet each "for each"
+For Each ${1:${VISUAL:Element}} in ${2:${VISUAL:group}}
+	${3}
+Next
+endsnippet
+
+snippet for "for"
+For i = ${1:${VISUAL:start}} To ${2:${VISUAL:end}}
+	${3}
+Next
+endsnippet
+
+snippet if "if"
+If ${1:${VISUAL:condition}} Then
+	${2}
+End If
+endsnippet
+
+snippet ife "if else"
+If ${1:${VISUAL:condition}} Then
+	${2}
+Else
+	${3}
+End If
+endsnippet
+
+snippet else "if else"
+Else
+	${1}
+endsnippet
+
+snippet ifn "if not"
+If Not ${1:${VISUAL:condition}} Then
+	${2}
+End If
+endsnippet
+
+snippet with "with"
+WITH ${1:${VISUAL:object}}
+	${2}
+End WITH
+endsnippet
+
+snippet while "while"
+While ${1:${VISUAL:condition}}
+	${2}
+Wend
+endsnippet
+
+snippet case "select case"
+Select Case ${1:${VISUAL:expression}}
+	Case ${2}
+		${3}
+	Case Else
+		${4}
+End Select
+endsnippet
